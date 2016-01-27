@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Раскраска синтаксиса 1С:Предприятия 8.x с помощью SyntaxHighlighter</title>
+	<meta charset="utf-8" />
+    <link id="common" type="text/css" rel="stylesheet" href="\Styles\common.css" />
+    
+    <!-->SyntaxHighlighter Core</!-->
+    <link id="shCoreDefault" type="text/css" rel="stylesheet" href="\Styles\SyntaxHighlighter_Core\shCoreDefault.css" />    
+    <link id="shStyles" type="text/css" rel="stylesheet" href="\Styles\SyntaxHighlighter_Core\SyntaxHighlighter.css" />
+    <script id="shCore" type="text/javascript" src="\Scripts\SyntaxHighlighter_Core\shCore.js"></script>
+    
+    <!-->Кисть для синтаксиса 1С:Предприятия 8.x</!-->
+    <script id="shBrushOce" type="text/javascript" src="\Scripts\SyntaxHighlighter_OneCEnterprise\shBrushOce.js"></script>
+    
+    <!-->Тема оформления для синтаксиса 1С:Предприятия 8.x</!-->
+    <link id="shTheme" type="text/css" rel="stylesheet" href="\Styles\SyntaxHighlighter_OneCEnterprise\shTheme1C.css" />
+    <script>
+        function doHighlight()
+        {
+            var source = document.getElementById('sourceCode');
+            var code = source.innerText;
+
+            if (code == "")
+                code = "Сообщить('Привет Мир!');";
+
+            var highlightCode = document.getElementById('highlightResult');
+            highlightCode.innerHTML =
+                '<pre id="HighlightCode" class="brush: oce">'+
+                source.innerText+
+                '</pre>';
+            SyntaxHighlighter.defaults['toolbar'] = false;
+            SyntaxHighlighter.defaults['gutter'] = true;
+            SyntaxHighlighter.highlight();
+        }
+    </script>
+</head>
+<body>
+    <h1>Раскраска синтаксиса 1С:Предприятия 8.x</h1>
+    <textarea id="sourceCode" placeholder="Сообщить('Привет Мир!');" oninput="doHighlight()"></textarea>
+    <div id="highlightResult">
+        <pre id="HighlightCode" class="brush: oce">Сообщить("Привет Мир!");</pre>
+    </div>    
+    <script>
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.defaults['gutter'] = true;
+        SyntaxHighlighter.highlight();
+    </script>
+</body>
+</html>

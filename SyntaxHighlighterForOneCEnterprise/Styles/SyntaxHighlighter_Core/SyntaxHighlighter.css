@@ -1,0 +1,4 @@
+﻿.syntaxhighlighter .container:before, .syntaxhighlighter .container:after {
+    content: normal;
+    display: block;
+}
