@@ -29,14 +29,14 @@
         keywords = '(^|\\s|[;(),])(' + keywords + ')(?=\\s|$|[;(),])';
 
         this.regexList = [
-            { regex: SyntaxHighlighter.regexLib.singleLineCComments, css: 'comments' },		                                    // Однострочный комментарий
-            { regex: /(["'])(?:(?!\1)[^\\]|\\|\\.)*\1/gi, css: 'string' },		                                                // Строка в двойных кавычках
-            { regex: new RegExp('\'(?:\\?.)*?\'', 'gi'), css: 'string' },		                                                // Строка в одинарных кавычках
+            { regex: SyntaxHighlighter.regexLib.singleLineCComments, css: 'comments' },		                        // Однострочный комментарий
+            { regex: /(["'])(?:(?!\1)[^\\]|\\|\\.)*\1/gi, css: 'string' },		                                    // Строка в двойных кавычках
+            { regex: new RegExp('\'(?:\\?.)*?\'', 'gi'), css: 'string' },		                                    // Строка в одинарных кавычках
             { regex: new RegExp('(^|\\s|\,|\(|\))([\\d]+(\\.[\\d]+)?|0x[a-f0-9]+)(?=\\s|$|;|\,|\(|\))', 'gi'), css: 'number' },	// Числа
-            { regex: /\+|\)|\(|\.|\,|\\|\*|=|\:|;|\&lt;|\&gt;|\[|\]|\?/g, css: 'punctuation' },		                            // Пунктуация
-            { regex: new RegExp(keywords, 'gi'), css: 'keyword' },		                                                        // Ключевые слова
-            { regex: /^\s*#.*/gm, css: 'preprocessor' },		                                                                // Теги препроцессора вида #Область и #КонецОбласти
-            { regex: /^\s*&.*/gm, css: 'preprocessor' },		                                                                // Теги препроцессора вида &Клиент and &Сервер
+            { regex: /\+|\)|\(|\.|\,|\\|\*|=|\:|;|\&lt;|\&gt;|\[|\]|\?/g, css: 'punctuation' },		                // Пунктуация
+            { regex: new RegExp(keywords, 'gi'), css: 'keyword' },		                                            // Ключевые слова
+            { regex: /^\s*#.*/gm, css: 'preprocessor' },		                                                    // Теги препроцессора вида #Область и #КонецОбласти
+            { regex: /^\s*&.*/gm, css: 'preprocessor' },		                                                    // Теги препроцессора вида &Клиент and &Сервер
         ];
     }
 
