@@ -1,12 +1,12 @@
-# brush-and-theme-1C:Enterprise 8.x
+# Brush-and-Theme-of-1C:Enterprise 8.x
 
 ### eng
-1C:Enterprise 8.x brush module for [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter).
+1C:Enterprise 8.x brush module and theme for [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter).
 
 [Examole of use](http://www.develplatform.ru/OneC/Online-instruments/1C-Syntax-Highlighter)
 
 ### rus
-**Модуль расскараски синтаксиса 1С:Предприятия 8.x для [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter).**
+**Модуль расскараски синтаксиса 1С:Предприятия 8.x и тема оформления для [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter).**
 
 [Пример использования](http://www.develplatform.ru/OneC/Online-instruments/1C-Syntax-Highlighter)
 
