@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
-  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.0.0-rc2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.0.0-rc2\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -43,8 +43,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +66,24 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\common.css" />
+    <Content Include="Content\SyntaxHighlighter\shCore.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreDjango.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreEclipse.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreEmacs.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreFadeToGrey.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreMDUltra.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreMidnight.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreRDark.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeDefault.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeDjango.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeEclipse.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeEmacs.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeFadeToGrey.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeMDUltra.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeMidnight.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeRDark.css" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -76,12 +94,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
-    <Content Include="Scripts\SyntaxHighlighter_Core\shCore.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shAutoloader.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushAppleScript.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushAS3.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushBash.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushColdFusion.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushCpp.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushCSharp.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushCss.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushDelphi.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushDiff.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushErlang.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushGroovy.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJava.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJavaFX.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJScript.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPerl.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPhp.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPlain.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPowerShell.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushPython.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushRuby.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushSass.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushScala.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushSql.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushVb.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushXml.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shCore.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shLegacy.js" />
     <Content Include="Scripts\SyntaxHighlighter_OneCEnterprise\shBrushOce.js" />
-    <Content Include="Styles\common.css" />
-    <Content Include="Styles\SyntaxHighlighter_Core\shCoreDefault.css" />
-    <Content Include="Styles\SyntaxHighlighter_Core\SyntaxHighlighter.css" />
-    <Content Include="Styles\SyntaxHighlighter_OneCEnterprise\shTheme1C.css" />
+    <Content Include="Content\SyntaxHighlighter_OneCEnterprise\shThemeOce.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -117,8 +159,8 @@
     <PropertyGroup>
       <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.0.0-rc2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.0.0-rc2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
