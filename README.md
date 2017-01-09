@@ -3,7 +3,7 @@
 ### eng
 1C:Enterprise 8.x brush module and theme for [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter).
 
-[Examole of use](http://www.develplatform.ru/OneC/Online-instruments/1C-Syntax-Highlighter)
+[Example of use](http://www.develplatform.ru/OneC/Online-instruments/1C-Syntax-Highlighter)
 
 ### rus
 **Модуль расскараски синтаксиса 1С:Предприятия 8.x и тема оформления для [SyntaxHighlighter](https://github.com/syntaxhighlighter/syntaxhighlighter).**
